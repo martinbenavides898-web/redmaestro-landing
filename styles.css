@@ -118,18 +118,53 @@ body {
 }
 
 /* Steps */
-.step { text-align: center; }
-.step-num {
-  width: 40px;
-  height: 40px;
+/* Steps (paneles) */
+.steps-grid{
+  display:grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  align-items: stretch;
+}
+
+.step{
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px 18px;
+  text-align: left;
+  box-shadow: var(--shadow);
+}
+
+.step h4{
+  margin: 10px 0 6px;
+}
+
+.step p{
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+/* circulito número arriba */
+.step-num{
+  width: 42px;
+  height: 42px;
   background: var(--primary);
   color: var(--white);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 15px;
-  font-weight: bold;
+  border-radius: 999px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight: 800;
+}
+
+/* Responsive */
+@media (max-width: 1024px){
+  .steps-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 640px){
+  .steps-grid{ grid-template-columns: 1fr; }
+  .step{ text-align: left; }
 }
 
 /* Services */
