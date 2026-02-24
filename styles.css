@@ -70,12 +70,12 @@ body {
 .nav-links a:hover { opacity: .75; }
 
 /* Hero */
+/* Hero */
 .hero {
   padding: 100px 0 60px;
   background:
     linear-gradient(rgba(27,38,59,0.95), rgba(27,38,59,0.95)),
-    url('./imagen-principal.jpg') no-repeat center center/cover;)
-    no-repeat center center/cover;
+    url('./imagen-principal.jpg') no-repeat center center / cover;
   color: var(--white);
 }
 .badge {
