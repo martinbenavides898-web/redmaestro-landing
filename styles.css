@@ -139,7 +139,25 @@ body {
   border-radius: var(--radius);
   border: 1px solid var(--border);
 }
-.service-icon{   width:72px;   height:72px;   display:flex;   align-items:center;   justify-content:center;   margin-bottom:15px; }  .service-icon img{   width:72px;   height:72px;   object-fit:contain; border-radius: 16px;   display:block;   filter: drop-shadow(0 6px 12px rgba(0,0,0,.10)); }
+
+.service-icon{
+  width:72px;
+  height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:15px;
+}
+
+.service-icon img{
+  width:72px;
+  height:72px;
+  object-fit:contain;
+  display:block;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,.10));
+  border-radius: 16px;
+}
+
 .service-card ul { list-style: none; margin-top: 15px; }
 .service-card li { margin-bottom: 8px; font-size: 0.95rem; color: var(--text-light); }
 .service-card li::before { content: "•"; color: var(--accent); font-weight: bold; margin-right: 8px; }
