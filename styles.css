@@ -74,7 +74,7 @@ body {
   padding: 100px 0 60px;
   background:
     linear-gradient(rgba(27,38,59,0.95), rgba(27,38,59,0.95)),
-    url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=2000')
+    url('./imagen-principal.jpg') no-repeat center center/cover;)
     no-repeat center center/cover;
   color: var(--white);
 }
