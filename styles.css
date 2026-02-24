@@ -1,11 +1,11 @@
 /* Variables */
 :root {
-  --primary: #1a2b4c;
-  --accent: #f39c12;
-  --success: #25d366;
-  --bg-light: #f8f9fa;
+  --primary: #1B263B;    /* Azul Media Noche */
+  --accent: #F3722C;     /* Naranja Solución */
+  --success: #25D366;    /* Verde WhatsApp */
+  --bg-light: #F8F9FA;   /* Blanco Humo */
   --bg-dark: #121212;
-  --text-main: #333;
+  --text-main: #2D3436;  /* Gris Carbón */
   --text-light: #666;
   --white: #ffffff;
   --border: #e1e1e1;
@@ -73,7 +73,7 @@ body {
 .hero {
   padding: 100px 0 60px;
   background:
-    linear-gradient(rgba(26,43,76,0.95), rgba(26,43,76,0.95)),
+    linear-gradient(rgba(27,38,59,0.95), rgba(27,38,59,0.95)),
     url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=2000')
     no-repeat center center/cover;
   color: var(--white);
