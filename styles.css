@@ -168,34 +168,60 @@ body {
 }
 
 /* Services */
-.service-card {
+/* Services (cards + imagen grande tipo banner) */
+.services-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 26px;
+  align-items: stretch;
+}
+
+.service-card{
   background: var(--white);
-  padding: 30px;
-  border-radius: var(--radius);
+  border-radius: 14px;
   border: 1px solid var(--border);
+  padding: 26px;
+  box-shadow: var(--shadow);
 }
 
+/* contenedor de imagen: ocupa el ancho del panel */
 .service-icon{
-  width:110px;
-  height:110px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  margin-bottom:15px;
+  width: 100%;
+  height: 190px;          /* <-- sube/baja esto (170-240) */
+  margin: 0 0 18px 0;
+  display: block;
 }
 
+/* imagen grande, recortada prolija */
 .service-icon img{
-  width:110px;
-  height:110px;
-  object-fit:contain;
-  display:block;
-  filter: drop-shadow(0 8px 16px rgba(0,0,0,.12));
-  border-radius: 18px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* importante: llena el panel */
+  display: block;
+  border-radius: 12px;
+  filter: drop-shadow(0 10px 18px rgba(0,0,0,.10));
 }
 
-.service-card ul { list-style: none; margin-top: 15px; }
-.service-card li { margin-bottom: 8px; font-size: 0.95rem; color: var(--text-light); }
-.service-card li::before { content: "•"; color: var(--accent); font-weight: bold; margin-right: 8px; }
+/* texto */
+.service-card h3{
+  margin-bottom: 10px;
+}
+
+.service-card ul{ list-style: none; margin-top: 12px; }
+.service-card li{ margin-bottom: 10px; font-size: 1rem; color: var(--text-light); }
+.service-card li::before{ content: "•"; color: var(--accent); font-weight: bold; margin-right: 10px; }
+
+/* Responsive */
+@media (max-width: 1024px){
+  .services-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .service-icon{ height: 180px; }
+}
+
+@media (max-width: 640px){
+  .services-grid{ grid-template-columns: 1fr; }
+  .service-icon{ height: 200px; }
+  .service-card{ padding: 22px; }
+}
 
 /* Pricing Table */
 .table-responsive { overflow-x: auto; }
